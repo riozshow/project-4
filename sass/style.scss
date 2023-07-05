@@ -52,6 +52,10 @@ p {
   opacity: .8;
 }
 
+i, button {
+  cursor: pointer;
+}
+
 .container {
   align-self: center;
   width: 100%;
@@ -94,6 +98,7 @@ nav {
     font-family: $font-nav;
     font-weight: 500;
     font-size: 14px;
+    cursor: pointer;
   }
 
   .wrapper {
@@ -151,6 +156,13 @@ nav {
       background-color: $color-primary;
       font-size: 18px;
       font-weight: 600;
+      transition: color .3s, background .3s;
+
+      &:hover {
+        color: $color-primary;
+        background-color: $color-light;
+      }
+
     }
 
   }
@@ -239,6 +251,11 @@ footer {
     text-align: center;
     border-radius: 100%;
     font-size: 20px;
+    transition: background .3s;
+
+    &:hover {
+      background-color: gray;
+    }
   }
 
   p {
