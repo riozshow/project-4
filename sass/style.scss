@@ -1,0 +1,78 @@
+/* Variables */
+
+$color-light: white;
+$color-primary: #fed136;
+
+$font-logo: "Imperial Script", cursive;
+$font-italic: "Noto Serif", serif;
+$font-sans: "Inter", sans-serif;
+$font-nav: "Montserrat", sans-serif;
+
+/* Global */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  color: $color-light;
+}
+
+.container {
+  align-self: center;
+  width: 100%;
+  max-width: 1400px;
+  padding: 0;
+  z-index: 1;
+
+  &.background {
+    z-index: -1 !important;
+    position: absolute;
+    background-size: cover;
+    background-position: 1px -44px;
+    height: 700px;
+    background-image: url(../images/background.jpg);
+    filter: brightness(0.6);
+  }
+}
+
+/* Navbar */
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    gap: 2.5rem;
+  }
+
+  li {
+    display: inline-block;
+    text-decoration: none;
+    font-family: $font-nav;
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2.75rem;
+  }
+
+  .logo {
+    color: $color-primary;
+    font-family: $font-logo;
+    font-size: 26px;
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+    display: inline-block;
+    width: 80px;
+  }
+}
