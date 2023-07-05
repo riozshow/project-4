@@ -25,7 +25,7 @@ body {
 }
 
 section {
-  margin: 6rem 0;
+  margin-top: 6rem;
 }
 
 h2 {
@@ -161,6 +161,12 @@ nav {
 
 .services {
 
+  margin-top: 12rem;
+
+  .container {
+    max-width: 1000px;
+  }
+
   i {
     color: $color-primary;
     font-size: 35px;
@@ -171,11 +177,10 @@ nav {
   }
 
   .service {
-    max-width: 300px;
-    margin: 0 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 5rem;
 
     p {
       margin: 0;
@@ -190,6 +195,8 @@ nav {
 /* Portfolio */
 
 .portfolio {
+
+  margin-top: 7rem;
 
   h3 {
     margin: 2rem 0 0 0;
@@ -221,8 +228,7 @@ nav {
 /* Footer */
 
 footer {
-  display: flex;
-  margin-top: 3rem;
+  margin: 9rem 0 2rem 0;
 
   i {
     background-color: $color-dark;
@@ -257,6 +263,71 @@ footer {
   .copyright {
     display: inline-block;
     margin-left: 14rem;
+  }
+
+}
+
+/* Media querys */
+
+@media screen and (max-width: 1200px) {
+
+  nav {
+    .container {
+      .wrapper {
+        justify-content: center;
+
+        ul {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .splash {
+
+    margin-top: 3rem;
+
+    .wrapper {
+
+      h2 {
+        font-size: 30px;
+        
+      }
+  
+      h1 {
+        font-size: 55px;
+        text-align: center;
+      }
+    }
+  }
+
+  .services {
+    .service {
+      max-width: 769px;
+      padding: 0 5rem;
+    }
+  }
+
+  .portfolio {
+    .row {
+      margin: 0 3rem;
+    }
+  }
+
+  footer {
+
+    p {
+      position: static;
+    }
+
+    .container {
+      flex-direction: column-reverse;
+    }
+
+    .copyright {
+      margin: 2rem 0;
+    }
+
   }
 
 }
