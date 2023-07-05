@@ -1,6 +1,7 @@
 /* Variables */
 
 $color-light: white;
+$color-dark: black;
 $color-primary: #fed136;
 
 $font-logo: "Imperial Script", cursive;
@@ -20,7 +21,35 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  color: $color-light;
+  color: $color-dark;
+}
+
+section {
+  margin: 6rem 0;
+}
+
+h2 {
+  font-family: $font-sans;
+  text-align: center;
+  font-size: 40px;
+  margin: .5rem 0;
+  padding: 0;
+}
+
+h3 {
+  font-family: $font-sans;
+  text-align: center;
+  font-size: 18px;
+  margin: .5rem 0;
+}
+
+p {
+  text-align: center;
+  font-style: italic;
+  font-size: 18px;
+  margin: .5rem 0;
+  padding: 0;
+  opacity: .8;
 }
 
 .container {
@@ -44,6 +73,9 @@ body {
 /* Navbar */
 
 nav {
+  
+  color: $color-light;
+
   ul {
     margin: 0;
     padding: 0;
@@ -63,7 +95,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 2.75rem;
+    padding: 2.5rem;
   }
 
   .logo {
@@ -82,8 +114,10 @@ nav {
 
 .splash {
 
+  color: $color-light;
+
   .wrapper {
-    height: 570px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
@@ -114,6 +148,43 @@ nav {
       font-weight: 600;
     }
 
+  }
+
+}
+
+/* Services */
+
+.services {
+
+  i {
+    color: $color-primary;
+    font-size: 35px;
+    border: 4px solid $color-primary;
+    border-radius: 100%;
+    padding: 1rem;
+    margin-bottom: .5rem;
+  }
+
+  
+
+  .row {
+    justify-content: center;
+    gap: 1rem;
+    margin: 5rem 0;
+  }
+
+  .service {
+    max-width: 315px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+      margin: 0;
+      font-style: normal;
+      font-size: 15px;
+      line-height: 1.5;
+    }
   }
 
 }
