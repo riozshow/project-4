@@ -70,6 +70,11 @@ p {
   }
 }
 
+.row {
+  justify-content: center;
+  margin: 5rem 0 2rem 0;
+}
+
 /* Navbar */
 
 nav {
@@ -165,16 +170,9 @@ nav {
     margin-bottom: .5rem;
   }
 
-  
-
-  .row {
-    justify-content: center;
-    gap: 1rem;
-    margin: 5rem 0;
-  }
-
   .service {
-    max-width: 315px;
+    max-width: 300px;
+    margin: 0 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -185,6 +183,37 @@ nav {
       font-size: 15px;
       line-height: 1.5;
     }
+  }
+
+}
+
+/* Portfolio */
+
+.portfolio {
+
+  h3 {
+    margin: 2rem 0 0 0;
+  }
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: 1/1;
+  }
+
+  .row {
+    margin: 0 13rem;
+  }
+
+  .custom-card {
+    padding: 4rem 1rem 1rem 1rem;
+    margin: 0;
+
+    p {
+      font-size: 16px;
+      margin: 0;
+    }
+    
   }
 
 }
