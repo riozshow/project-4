@@ -213,7 +213,50 @@ nav {
       font-size: 16px;
       margin: 0;
     }
-    
+
+  }
+
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  margin-top: 3rem;
+
+  i {
+    background-color: $color-dark;
+    color: $color-light;
+    padding: .75rem;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    border-radius: 100%;
+    font-size: 20px;
+  }
+
+  p {
+    position: absolute;
+    left: 0;
+    font-size: 15px;
+  }
+
+  .container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .social {
+    display: inline-flex;
+    gap: .5rem;
+  }
+
+  .copyright {
+    display: inline-block;
+    margin-left: 14rem;
   }
 
 }
